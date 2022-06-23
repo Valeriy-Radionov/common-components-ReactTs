@@ -1,0 +1,57 @@
+.wrapper {
+    background: yellow;
+    width: 400px;
+}
+
+.message_body {
+    display: flex;
+    background: greenyellow;
+}
+
+.avatar_image {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 100px;
+    border: 3px solid white;
+    box-shadow: 0 0 7px #666;
+}
+
+.message {
+    background: green;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    width: 300px;
+    height: 100px;
+}
+
+.message:before {
+    position: relative;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid green;
+    border-left: 50px solid transparent;
+    top: 30.5%;
+    left: -5%;
+}
+
+.user_name {
+    padding: 0px 0px 0px 45px;
+    color: aqua;
+}
+
+.text_message {
+    padding: 0px 0px 0px 45px;
+    color: white;
+}
+
+.time {
+    padding: 20px 0px 0px 200px;
+    color: darkgrey;
+}
+
+
+
+

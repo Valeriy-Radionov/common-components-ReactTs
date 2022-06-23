@@ -1,0 +1,19 @@
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.checkbox:checked {
+}
+
+.checkbox:focus {
+    outline: #99ff99 solid 1px;
+}
+
+.spanClassName {
+}
