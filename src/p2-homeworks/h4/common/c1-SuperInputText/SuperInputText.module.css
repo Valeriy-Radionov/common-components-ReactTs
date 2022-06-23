@@ -3,11 +3,6 @@
 }
 
 .errorInput {
-    border: 3px solid lightslategray;
+    border: 1px solid red;
     border-radius: 5px;
-    background: lightcyan;
-}
-
-.errorInput {
-    color: red;
 }
