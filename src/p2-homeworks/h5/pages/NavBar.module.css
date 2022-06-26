@@ -1,0 +1,40 @@
+@keyframes rightAnimation {
+    50% {
+        margin-left: 10px;
+    }
+}
+
+.wrapper {
+    display: flex;
+}
+
+.navBarCollapsed {
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*z-index: -1;*/
+    /*opacity: 0;*/
+    /*transition: visibility 0s linear 300ms, opacity 3s;*/
+
+}
+
+.navBarDefault {
+    /*visibility: visible;*/
+    /*opacity: 1;*/
+    /*animation: rightAnimation 2s;*/
+    /*transition: visibility 0s linear 0s, opacity 300ms;*/
+}
+
+.activeNavLink {
+    color: lightskyblue;
+}
+
+.inactiveNavLink {
+    color: blueviolet;
+}
+
+.buttonMenu {
+    z-index: 999;
+    margin-left: 5px;
+    color: lightskyblue;
+    background: lightslategrey;
+}
