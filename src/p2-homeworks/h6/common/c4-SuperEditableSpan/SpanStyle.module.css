@@ -1,0 +1,9 @@
+.spanStyle {
+    border: 2px solid #2927a1;
+    border-radius: 5px;
+    content: url("refactorIcon.png");
+    height: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
