@@ -66,7 +66,9 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         {...restSpanProps}
                     >
                         {/*если нет захардкодженного текста для спана, то значение инпута*/}
-                        {children || restProps.value}
+                        <img className={s.spanImage}
+                             src="src/p2-homeworks/h6/common/c4-SuperEditableSpan/refactorIcon.png"
+                             alt="def"/>{children || restProps.value}
                     </span>
                 )
             }
