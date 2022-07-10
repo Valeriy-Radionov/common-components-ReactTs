@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
+import s from "../h6/common/c4-SuperEditableSpan/SpanStyle.module.css"
 
 function HW6() {
     const [value, setValue] = useState<string>('')
@@ -20,6 +21,8 @@ function HW6() {
 
             {/*should work (должно работать)*/}
             <div>
+                <img className={s.spanImage} src="src/p2-homeworks/h6/common/c4-SuperEditableSpan/refactorIcon.png"
+                     alt="def"/>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
