@@ -1,8 +1,12 @@
 import React from 'react'
 import {homeWorkReducer} from '../homeWorkReducer'
 
-let initialState: any[] // need to fix any
-
+export let initialState: InitialStateType[] // need to fix any
+export type InitialStateType = {
+    _id: number
+    name: string
+    age: number
+}
 beforeEach(() => {
     initialState = [
         {_id: 0, name: 'Кот', age: 3},
@@ -15,13 +19,13 @@ beforeEach(() => {
 })
 
 test('sort name up', () => {
-    const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'up'})
+    const newState = homeWorkReducer(initialState, {type: 'sort', payload: "up"})
 
     console.log(newState)
     // expect(...).toBe(...)
 })
 test('sort name down', () => {
-    const newState = homeWorkReducer(initialState, {type: 'sort', payload: 'down'})
+    // const newState = homeWorkReducer(initialState, {type: 'sort', payload: "down"})
 
 
 })

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {InitialStateType} from "./bll/tests/homeWorkReducer.test";
 
 // export type UserType =
 
@@ -14,12 +15,13 @@ const initialPeople = [
 ]
 
 function HW8() {
-    const [people, setPeople] = useState<any>(initialPeople) // need to fix any
+    const [people, setPeople] = useState<InitialStateType[]>(initialPeople) // need to fix any
 
     // need to fix any
-    const finalPeople = people.map((p: any) => (
+    const finalPeople = people.map((p: InitialStateType) => (
         <div key={p._id}>
-            some name, age
+            <span>{p.name + " "}</span>
+            <span>{p.age}</span>
         </div>
     ))
 
