@@ -1,4 +1,4 @@
-import {InitialStateType} from "./tests/homeWorkReducer.test";
+import {PeopleType} from "../HW8";
 
 type ActionType = {
     type: "sort",
@@ -7,7 +7,7 @@ type ActionType = {
     type: "check",
     payload: 18
 }
-export const homeWorkReducer = (state: InitialStateType[], action: ActionType): InitialStateType[] => { // need to fix any
+export const homeWorkReducer = (state: PeopleType[], action: ActionType): PeopleType[] => { // need to fix any
     switch (action.type) {
         case 'sort': {
             let newState = [...state.sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)]

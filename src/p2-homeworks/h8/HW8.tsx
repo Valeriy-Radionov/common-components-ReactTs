@@ -4,8 +4,10 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {InitialStateType} from "./bll/tests/homeWorkReducer.test";
 import s from "./style.module.css"
 // export type UserType =
-
-const initialPeople = [
+export type PeopleType = {
+    _id: number, name: string, age: number
+}
+const initialPeople: PeopleType[] = [
     {_id: 0, name: 'Кот', age: 3},
     {_id: 1, name: 'Александр', age: 66},
     {_id: 2, name: 'Коля', age: 16},
@@ -15,8 +17,7 @@ const initialPeople = [
 ]
 
 function HW8() {
-    const [people, setPeople] = useState<InitialStateType[]>(initialPeople) // need to fix any
-
+    const [people, setPeople] = useState<PeopleType[]>(initialPeople) // need to fix any
     // need to fix any
     const finalPeople = people.map((p: InitialStateType) => (
         <div key={p._id} className={s.item}>
