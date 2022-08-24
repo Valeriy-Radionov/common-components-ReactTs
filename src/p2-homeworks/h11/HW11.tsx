@@ -5,7 +5,8 @@ import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
 function HW11() {
     const [value1, setValue1] = useState(0)
     const [value2, setValue2] = useState(100)
-
+    const min: number = 0
+    const max: number = 100
     const onChangeValue = (value: number) => {
         setValue1(value)
     }
@@ -26,7 +27,7 @@ function HW11() {
 
             <div>
                 <span>{value1}</span>
-                <SuperDoubleRange max={100} min={0} onChangeRange={onChangeRange} value={[value1, value2]}/>
+                <SuperDoubleRange max={max} min={min} onChangeRange={onChangeRange} value={[value1, value2]}/>
                 <span>{value2}</span>
             </div>
 
