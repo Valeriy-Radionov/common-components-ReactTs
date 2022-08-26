@@ -21,3 +21,14 @@
 .some-text {
     color: darkslateblue;
 }
+
+.red-black {
+    background: black;
+    border: 1px solid red;
+}
+
+.red-black-text {
+    color: red;
+    font-size: 14px;
+
+}
